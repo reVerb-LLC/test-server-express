@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "protocol": "inspector",
+      "request": "launch",
+      "name": "Launch API",
+      "program": "${workspaceFolder}/server4/src/server.ts",
+      "cwd": "${workspaceRoot}/server4",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceRoot}/server4/**/**.js"],
+      "sourceMaps": true,
+      "smartStep": true
+    }
+  ]
+}

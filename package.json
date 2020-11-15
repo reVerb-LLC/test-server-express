@@ -1,0 +1,38 @@
+{
+  "name": "test-server-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server1/index.js",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.7",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "kill": "taskkill /f /im node.exe",
+    "server1": "node server1/index.js",
+    "server2": "node server2/server.js",
+    "server3": "node server3/index.js",
+    "server4": "tsc -p ./server4 & node server4/dist/server.js",
+    "all": "concurrently \"npm run server1\"  \"npm run server2\" \"npm run server3\" \"npm run server4\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reVerb-LLC/test-server-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reVerb-LLC/test-server-express/issues"
+  },
+  "homepage": "https://github.com/reVerb-LLC/test-server-express#readme"
+}
