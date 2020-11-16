@@ -8,7 +8,7 @@ router.get("/login", apiController.login, (req, res) => {
   return res.status(200).json(res.locals.loggedIn);
 });
 
-router.post("/signup", apiController.signup, (req, res) => {
+router.get("/signup", apiController.signup, (req, res) => {
   res.status(200).send(res.locals.signedUp);
 });
 

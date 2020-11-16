@@ -7,7 +7,7 @@ router.get("/verify", authController.verify, (req, res) => {
   return res.status(200).json(res.locals.verified);
 });
 
-router.post("/create", authController.create, (req, res) => {
+router.get("/create", authController.create, (req, res) => {
   return res.status(200).json(res.locals.created);
 });
 

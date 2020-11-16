@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const api_1 = __importDefault(require("./api"));
+const app_1 = __importDefault(require("./app"));
 class Server {
 }
 Server.port = 3004;
@@ -13,5 +13,5 @@ Server.start = (app) => {
     });
     return new Server();
 };
-Server.start(api_1.default);
+Server.start(app_1.default);
 //# sourceMappingURL=server.js.map

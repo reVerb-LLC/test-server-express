@@ -10,6 +10,8 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "supertest": "^6.0.1",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5"
   },
@@ -19,10 +21,11 @@
   },
   "scripts": {
     "kill": "taskkill /f /im node.exe",
-    "server1": "node server1/index.js",
-    "server2": "node server2/server.js",
-    "server3": "node server3/index.js",
-    "server4": "tsc -p ./server4 & node server4/dist/server.js",
+    "test": "jest --detectOpenHandles",
+    "server1": "nodemon server1/index.js",
+    "server2": "nodemon server2/server.js",
+    "server3": "nodemon server3/index.js",
+    "server4": "tsc -p ./server4 & nodemon server4/dist/server.js",
     "all": "concurrently \"npm run server1\"  \"npm run server2\" \"npm run server3\" \"npm run server4\""
   },
   "repository": {
